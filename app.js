@@ -7,8 +7,9 @@ async function loadMapData(){
     let mapaUrl = 'https://servicodados.ibge.gov.br/api/v3/malhas/paises/BR?formato=image/svg+xml&qualidade=maxima&intrarregiao=UF'
     // endereço dos dados da região norte, por município, na API do IBGE
     let estadosUrl = 'https://servicodados.ibge.gov.br/api/v1/localidades/estados?formato=application/json'
+    //Dados solicitados para o Ministério da Defesa
     let dadosUrl='dados/Militares_UF.json';
-   //Dados solicitados para o Ministério da Defesa
+   
     
     // carrega o arquivo da malha da URL do IBGE
     let mapaSvg = await fetch(mapaUrl);
